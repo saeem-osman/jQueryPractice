@@ -48,7 +48,7 @@
                 <h1>JQuery Practice</h1>
         </header>
 
-        <form>
+        <form id="form">
             <label>name</label><br />
             <input type="text" id="name" name="name"><br />
             <label>Email</label><br />
@@ -62,11 +62,23 @@
         </form>
 
         <script>
-            $('input').focus(function(){
-                $(this).css('background','grey');
-            })
-            $('input').blur(function(){
-                $(this).css('background','white');
+            // $('input').focus(function(){
+            //     $(this).css('background','grey');
+            // })
+            // $('input').blur(function(){
+            //     $(this).css('background','white');
+            // })
+            // $('input').keyup(function(e){
+            //     console.log(e.target.value);
+            // })
+            // $('select#gender').change(function(e){
+            //     console.log(e.target.value);
+            // })
+            $('#form').submit(function(e){
+                e.preventDefault();
+                let name = $('#name').val().toUpperCase();
+                
+                console.log(name);
             })
         </script>
 
