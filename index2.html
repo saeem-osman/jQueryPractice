@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script> 
+    <style>
+        body{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            line-height: 1.5em;
+        }
+        header{
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000 solid;
+            margin-bottom: 10px;
+        }
+        #container{
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(()=>{
+                alert('I love you so much');
+            })
+        })
+        $(document).ready(()=>{
+            $('#btn2').hover(()=>{
+                alert('Hahahah');
+            })
+        })
+    </script>
+</head>
+<body>
+        <header>
+                <h1>JQuery Practice</h1>
+        </header>
+
+        <button id="btn1">Button1</button>
+        <br />
+        <button id="btn2">Button2</button>
+        <br />
+        <button id="btn3">Button3</button>
+        <hr />
+        <p id="para1">This is a cool paragraph. I very good at typing.
+            I can type more than 70 words in a miniutes. That is awesome.
+            The most important thing is that<span>I can work very hard. I love
+                to work both in the frontend and the backend.
+            </span>
+        </p>
+        <button id="btn4">show</button>
+        <button id="btn5">hide</button>
+        <button id="btn6">toggle</button>
+        <hr />
+        <p id="para2">This is second paragraph. I type a lot of thing a
+            sample text.    
+        </p>
+        <button id="btn10">Button10</button>
+
+        <h1 id="coords"></h1>
+
+        <script>
+            var msg = "Hello from the other side";
+            $('#btn2').click(()=>{
+                alert('I am clicked too'+msg);
+            })
+        $(document).ready(()=>{
+            $('#btn3').on('click',()=>{
+                alert('I am button 3');
+            })
+        });
+
+        $('#btn4').click(()=>{
+            $('#para1').show();
+        });
+        $('#btn5').click(()=>{
+            $('#para1').hide();
+        });
+        $('#btn6').click(()=>{
+            $('#para1').toggle();
+        });
+
+        // $('#btn10').on('mouseenter', function(){
+        //     $('#para2').css('font-size','30px');
+        // })
+        // $('#btn10').on('mouseleave', function(){
+        //     $('#para2').css('font-size','10px');
+        // })
+
+    //    $('#btn10').click((e)=>{
+    //        console.log(e.currentTarget.outerHTML);
+    //    })
+
+    //    $(document).on('mousemove', (e)=>{
+    //        $('#coords').html('Coords: Y: '+e.clientY + " X: "+e.clientX);
+    //    });
+
+
+        </script>
+</body>
+</html>
