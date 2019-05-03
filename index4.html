@@ -47,11 +47,40 @@
             <p class="para1">This is my first paragraph</p>
             <p class="para2">This is my second paragraph</p>
             <div id="myDiv"></div>
+            <input type="text" id="newItem">
+
+            <!-- <ul id="ulItem">
+                <li>Liste item1</li>
+                <li>Liste item2</li>
+                <li>Liste item3</li>
+                <li>Liste item4</li>
+                <li>Liste item5</li>
+            </ul> -->
+
         </div>
         <script>
-            $('p:first').addClass('myClass');
-            $('p:last').css({background: 'yellow', color: '#ccc', fontWeight: 'bold',fontSize: '36px' });
-            $('p:first').removeClass('myClass');
+            // $('p:first').addClass('myClass');
+            // $('p:last').css({background: 'yellow', color: '#ccc', fontWeight: 'bold',fontSize: '36px' });
+            // $('p:first').removeClass('myClass');
+            // $(document).ready(function(){
+            //     $('#newItem').keyup(function(e){
+            //         var code = e.which;
+            //         if(code == 13){
+            //             e.preventDefault();
+            //             $('ul').append('<li>'+e.target.value+'</li>');
+            //             $('#newItem').val('');
+            //         }
+            //     })
+                // var myArr = ['fire','flies','lone','night'];
+                // $(myArr).each(function(i,val){
+                //     $('#myDiv').append('<h3>'+val+'</h3>')
+                    
+                // })
+            //    var newArr =  $('ul#ulItem li').toArray();
+            //    $.each(newArr,function(i,val){
+            //        console.log("value: "+ val.innerHTML);
+            //    })
+            // })
         </script>
 </body>
 </html>
